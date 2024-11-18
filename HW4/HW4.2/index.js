@@ -1,6 +1,7 @@
 let nut = prompt("Введите трехзначное число");
     switch (true) {
       case nut === null:
+        alert('ви скасували');
         break;
         case !/^\d{3}$/.test(nut):
             alert("Вы ввели не трехзначное число");
