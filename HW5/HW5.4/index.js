@@ -1,4 +1,4 @@
-let Check = true;
+let check = true;
 
 do {
   const digit = prompt("Enter your number");
@@ -19,5 +19,5 @@ do {
 
   alert(`Digit ${digit} is ${isPrime ? "prime" : "not prime"}`);
 
-} while (Check);
+} while (check);
 
