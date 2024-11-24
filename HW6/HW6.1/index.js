@@ -1,8 +1,11 @@
-let message = prompt('Enter your string');
-let chars = prompt('Enter some chars for removing');
 
-for (let i = 0; i < chars.length; i++) {
-    message = message.split(chars[i]).join('');
+const message = prompt('Enter your string');
+const chars = prompt('Enter some chars for removing').split('');
+
+function foo(string, arr) {
+    return string.split('').filter(char => !arr.includes(char)).join('');
 }
 
-console.log("Result message:", message);
+const result = foo(message, chars);
+
+alert(result);

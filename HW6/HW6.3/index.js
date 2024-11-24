@@ -5,8 +5,9 @@ function removeElement(array, item) {
     while ((index = array.indexOf(item)) !== -1) {
         array.splice(index, 1);
     }
-    return array;
+    return null;
 }
+
 removeElement(array, 4);
 
 console.log(array);
