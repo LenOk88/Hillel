@@ -1,18 +1,18 @@
 
-    const Age = prompt("Year of your birth");
+    const age = prompt("Year of your birth");
     let result = "";
 
-    if (!Age) {
+    if (!age) {
         alert (`You didn't enter your year of birth`);
     } else {
-        result += `Your age: ${new Date().getFullYear() - Age}\n`;
+        result += `Your age: ${new Date().getFullYear() - age}\n`;
     }
 
-    const City = prompt("What city do you live in?");
-    if(!City) {
+    const city = prompt("What city do you live in?");
+    if(!city) {
         alert(`You didn't enter your city`);
     } else {
-        switch (City.toLowerCase()) {
+        switch (city.toLowerCase()) {
             case 'kyiv':
                 result += `You live in the country of Ukraine\n`;
                 break;
@@ -23,16 +23,16 @@
                 result += `You live in the country of USA\n`;
                 break;
             default:
-                result += `You live in the city of ${City}\n`;
+                result += `You live in the city of ${city}\n`;
                 break;
              }
         }
 
-    const Sport = prompt("Favorite sport");
-    if(!Sport) {
+    const sport = prompt("Favorite sport");
+    if(!sport) {
         alert(`You didn't enter your sport`);
     } else {
-        switch (Sport.toLowerCase()) {
+        switch (sport.toLowerCase()) {
             case 'football':
                 result += `Do you want to be like Shevchenko?\n`;
                 break;
@@ -43,32 +43,9 @@
                 result += `Do you want to be like Klochkova?\n`;
                 break;
             default:
-                result += `Favorite sport: ${Sport}`;
+                result += `Favorite sport: ${sport}`;
                 break;
         }
 
         alert(result)
       }
-
-                
-    // else if(City === 'London'){
-    //     alert ('You live in the country of England');
-    // }
-    // else if(City === 'Washington'){
-    //     alert ('You live in the country of USA');
-    // }
-    // else{
-    //     alert (`You live in the city of ${City}`);
-    // }
-    // if(Sport === 'boxing'){
-    //     alert('Круто! Хочешь стать как Усик?');
-    // }
-    // else if(Sport === 'football'){
-    //     alert ('Круто! Хочешь стать как Шевченко?');
-    // }
-    // else if(Sport === 'tennis'){
-    //     alert ('Круто! Хочешь стать как Зверев?');
-    // }
-    // else{
-    //     alert (`Favorite sport: ${Sport}`);
-    // }
