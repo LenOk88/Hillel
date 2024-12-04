@@ -2,7 +2,7 @@
 function printChoise() {
     let attempts = 0;
     let maxAttempts = 10;
-
+    
     while (attempts < maxAttempts) {
         let userInput = prompt("Введіть число більше 100:");
 
@@ -11,15 +11,15 @@ function printChoise() {
             break;
         }
         if (userInput === '') {
-            console.log("Строка не введена.");
-            continue;
-           }
-           userInput = parseInt(userInput);
+            console.log("Строка не введена");
+           } 
+
         if (userInput > 100) {
-            console.log("Число більше 100: ", userInput);
+            let number = parseInt(userInput);
+            console.log("Число більше 100:" ,number);
             break;
         } else {
-            console.log("Число повинно бути більше 100.");
+            console.log("Повинно бути число більше 100! ", userInput);
             }
             
         attempts++;
