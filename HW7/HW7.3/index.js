@@ -12,7 +12,7 @@ function printChoise() {
         }
         if (userInput === '') {
             console.log("Строка не введена");
-           } 
+        } 
 
         if (userInput > 100) {
             let number = parseInt(userInput);
@@ -20,7 +20,7 @@ function printChoise() {
             break;
         } else {
             console.log("Повинно бути число більше 100! ", userInput);
-            }
+        }
             
         attempts++;
     }
