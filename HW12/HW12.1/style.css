@@ -1,0 +1,12 @@
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+button:hover {
+  background: #ed1a2d;
+}
+button:active {
+  background: #f1848d;
+}
