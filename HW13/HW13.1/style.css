@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background: white;
+    color: rgb(80, 86, 92);
+    font: normal 14px/20px Arial, Times, sans-serif;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+form {
+  width: 400px;
+  margin: 20px auto;
+  background: rgb(226, 246, 253);
+  border: 1px solid rgb(208, 238, 249);
+  border-radius: 8px;
+}
+.form {
+  margin: 30px 40px;
+}
+h2 {
+  padding: 0 0 20px 0;
+  text-align: center;
+  color: rgb(245, 16, 100);
+}
+h3 {
+  color: rgb(119, 119, 119);
+  margin: 0 0 20px 0;
+  font: normal 16px/24px Arial, Times, sans-serif;
+
+}
+.registration {
+  display: block;
+  width: 310px;
+  height: 25px;
+  margin: 0;
+  border: 1px solid rgb(208, 238, 249);
+  border-radius: 8px;
+  box-shadow: 0 0 0 100px white inset;
+}
+.message {
+  height: 50px;
+}
+.submit {
+  width: 300px;
+  height: 40px;
+  border: 1px solid rgb(54, 142, 242);
+  border-radius: 10px;
+  background: rgb(54, 142, 242);
+  margin: 0 0 0 10px;
+  color: white;
+  box-shadow: rgb(48, 72, 99) 5px 5px 5px 0;
+}
