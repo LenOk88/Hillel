@@ -15,7 +15,10 @@ const saveTodos = (todos) => {
 
 const renderTodos = () => {
     const todos = loadTodos();
-    todosWrapper.innerHTML = '';
+    
+    while (todosWrapper.firstChild) {
+        todosWrapper.removeChild(todosWrapper.firstChild);
+    }
 
     todos.forEach((todo, index) => {
         const li = document.createElement('li');
