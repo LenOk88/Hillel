@@ -1,20 +1,24 @@
 let ladder = {
     step: 0,
 
-    up: function () {
-        this.step++;
-        return this;
+    up: () => {
+        ladder.step++;
+        return ladder;
     },
 
-    down: function () {
-        this.step--;
-        return this;
+    down: () => {
+        if (ladder.step > 0) {
+            ladder.step--;
+        } else {
+            console.log("Нельзя спуститься ниже первого уровня!");
+        }
+        return ladder;
     },
 
-    showStep: function () {
-        console.log(this.step);
-        return this;
+    showStep: () => {
+        console.log(ladder.step);
+        return ladder;
     }
 };
 
-ladder.up().up().down().showStep();
+ladder.up().up().down().showStep(); 
