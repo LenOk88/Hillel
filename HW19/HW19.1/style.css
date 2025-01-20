@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-widget {
+    background: linear-gradient(pink, rgb(15, 15, 201));
+    
+    border-radius: 15px;
+    border: 2px solid rgb(6, 6, 198);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
+}
+
+.weather-widget h2 {
+    color: blue;
+    margin: 10px 0;
+}
+
+.weather-widget .time {
+    color: rgb(11, 11, 225);
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.weather-widget .temp {
+    color: rgb(15, 15, 202);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.weather-widget .details {
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+    margin: 10px 0;
+}
+
+.weather-widget .refresh {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.weather-widget .refresh img {
+    width: 30px;
+    height: 30px;
+}
+
+.weather-widget .refresh img:hover {
+    transform: rotate(180deg) scale(1.5);
+    transition: all ease-in-out 1s;
+}

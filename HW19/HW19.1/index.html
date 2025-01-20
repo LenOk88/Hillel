@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW19</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="weather-widget">
+        <h2 id="date">Loading...</h2>
+        <div class="time" id="time">--:--</div>
+        <div class="temp" id="temperature">--°C</div>
+        <div class="details">
+            <p id="feels-like">Feels Like: --°C</p>
+            <p id="description">--</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="pressure">Pressure: -- hPa</p>
+            <p id="wind">Wind: -- km/h</p>
+        </div>
+        <button id="update-btn" class="refresh" onclick="fetchWeather()">
+            <img src="./img/Refresh.png" alt="Refresh">
+        </button>
+    </div>
+
+</body>
+</html>
+
