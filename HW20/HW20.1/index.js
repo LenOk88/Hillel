@@ -1,4 +1,27 @@
-    $('#todoList').on('click', 'li', function() {
-        let task = $(this).data('task');
-        $('#taskDetails').text(task);
+$(document).ready(function () {
+    const taskList = $('#taskList');
+    const taskInput = $('#taskInput');
+    const addTaskButton = $('#addTaskButton');
+  
+    addTaskButton.on('click', function () {
+      const taskText = taskInput.val().trim();
+      if (taskText) {
+        const newTask = $(`<li>${taskText} <button class='deleteBtn btn btn-danger'>Видалити</button></li>`);
+        taskList.append(newTask);
+        taskInput.val('').focus();
+      }
     });
+
+    taskList.on('click', '.deleteBtn', function () {
+      $(this).closest('li').remove();
+    });
+
+    taskList.on('click', 'li', function (e) {
+      if (!$(e.target).hasClass('deleteBtn')) {
+        const taskText = $(this).text().replace('Видалити', '').trim();
+        $('#taskText').text(taskText);
+        $('#taskModal').modal('show');
+      }
+    });
+  });
+  
