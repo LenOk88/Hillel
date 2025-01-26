@@ -1,3 +1,6 @@
 .idea/
 .idea/*
 Hillel/
+node_modules
+./**/node_modules
+**/node_modules
