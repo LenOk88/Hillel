@@ -1,51 +1,24 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 65,
-              },
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4,
-              },
-            },
-          },
-        ],
-      },
-    ],
+  entry: './src/index.js', // Точка входа
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'), // Папка, где будут храниться сгенерированные файлы
+    },
+    compress: true, // Включает сжатие
+    port: 9000, // Порт для сервера
+    open: true, // Открывать браузер при запуске
+    hot: true, // Включить горячую замену модулей (если необходимо)
   },
   plugins: [
-    new ImageMinimizerPlugin({
-      minimizer: [
-        {
-          implementation: ImageMinimizerPlugin.imageminGenerate,
-          options: {
-            plugins: [
-              ['imagemin-mozjpeg', { quality: 70, progressive: true }],
-              ['imagemin-pngquant', { quality: [0.65, 0.90] }],
-            ],
-          },
-        },
-      ],
+    new HtmlWebpackPlugin({
+      template: './src/index.html', // Путь к шаблону HTML
     }),
   ],
 };
