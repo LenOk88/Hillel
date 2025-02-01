@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .container {
+    margin: 40px;
+}
+.title {
+    color: blue;
+    margin: 0 0 20px 60px;
+}
+  .list-group {
+    list-style-type: none;
+    padding: 0;
+    width: 400px;
+  }
+  li.list-group-item {
+    padding: 0;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  .list {
+    margin: 5px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 400px;
+  }
+  .modal-title {
+      color: blue;
+  }
+  input {
+    padding: 3px;
+  }
+  .deleteBtn.btn.btn-danger {
+    background: blue;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .deleteBtn.btn.btn-danger:hover {
+    background: rgb(26, 26, 171);
+    cursor: pointer;
+  }
+.btn.btn-primary {
+    background: blue;
+    cursor: pointer;
+}
+.btn.btn-primary:hover {
+    background: rgb(26, 26, 171);
+    cursor: pointer;
+}
+.btn.btn-secondary {
+    background: blue;
+    cursor: pointer;
+}
+.btn.btn-secondary:hover {
+    background: rgb(26, 26, 171);
+    cursor: pointer;
+  }
