@@ -7,7 +7,7 @@ ul {
   padding: 0;
 }
 .list {
-  background: #f4f4f4
+  background: #f4f4f4;
   margin: 5px 0;
   display: flex;
   justify-content: start-end;
