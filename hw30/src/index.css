@@ -1,0 +1,65 @@
+body {
+  background-color: wheat;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.card {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+h1 {
+  color: black;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.list-group {
+  margin-top: 10px;
+}
+
+.list-group-item {
+  background: #444;
+  color: white;
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.footer {
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 470px;
+  background-color: wheat;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn {
+  border-radius: 8px;
+  background: rgb(250, 197, 118);
+  font-size: 18px;
+  padding: 10px 30px;
+  margin-left: 20px;
+}
+.btn-click {
+  background: white;
+  margin: 0px 0px 10px 0px;
+  
+}
+.text-loading {
+  color: black;
+}
+.text-danger {
+  color: red;
+}
