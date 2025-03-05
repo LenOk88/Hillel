@@ -2,13 +2,11 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import style from "./UserItem.module.scss";
 
-
 export function UserItem({ data, loading, error }) {
   if (!data) {
-    return <p>Loading...</p>; // Или другой UI для обработки отсутствия данных
+    return <p></p>; 
   }
   const {name, height, mass, eye_color, birth_year, films, starships } = data;
-
 
   return (
     <div className="container mt-5 text-center">
@@ -20,7 +18,7 @@ export function UserItem({ data, loading, error }) {
           <div className="card-body">
             <h2>Name: {name}</h2>
             <p>Height: {height} см</p>
-            <p>Mass: {mass} кг</p>
+            <p>Mass: {mass} kg</p>
             <p>Hair color: {eye_color}</p>
             <p>Birth year: {birth_year}</p>
 
@@ -41,10 +39,6 @@ export function UserItem({ data, loading, error }) {
                 <li className="list-group-item">No information</li>
               )}
             </ul>
-
-            <button className="btn btn-danger mt-3">
-              Remove User
-            </button>
           </div>
         </div>
       )}

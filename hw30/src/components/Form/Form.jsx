@@ -4,7 +4,7 @@ import { fetchCharacter } from "../../store/character/characterSlice";
 import style from "./Form.module.scss";
 
 export function Form() {
-  const [characterId, setCharacterId] = useState(""); // Добавляем useState
+  const [characterId, setCharacterId] = useState("");
   const dispatch = useDispatch();
   function handleSearch(e) {
     e.preventDefault();

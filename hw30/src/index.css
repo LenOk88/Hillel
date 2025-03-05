@@ -3,3 +3,56 @@ body {
   color: white;
   font-family: Arial, sans-serif;
 }
+.btn {
+  border-radius: 8px;
+  background: rgb(250, 197, 118);
+  font-size: 18px;
+  padding: 10px 30px;
+  margin-left: 20px;
+}
+h1 {
+  color: black;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.btn-click {
+  background: white;
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+.list-group {
+  margin-top: 10px;
+}
+
+.list-group-item {
+  background: #444;
+  color: white;
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.card {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-loading {
+  color: black;
+}
+.text-danger {
+  color: red;
+}
+.btn-danger {
+  cursor: pointer;
+}
