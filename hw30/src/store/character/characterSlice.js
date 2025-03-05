@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+// Изменил имя для избежания конфликта
 export const fetchCharacter = createAsyncThunk(
   "character/fetchCharacter",
   async (id, { rejectWithValue }) => {

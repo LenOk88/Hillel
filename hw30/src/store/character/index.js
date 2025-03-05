@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import store from "./store/store";
-import App from "./App";
-import "./index.css";
+import characterSlice from "./characterSlice"; // если store.js находится в папке store
+import { fetchCharacterData, clearCharacter } from "../../store/character/characterSlice";
+import store from "../store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
