@@ -1,0 +1,13 @@
+{
+    "destinations": [
+      { "id": 1, "name": "Paris" },
+      { "id": 2, "name": "London" },
+      { "id": 3, "name": "New York" }
+    ],
+    "hotels": [
+      { "id": 1, "name": "Hotel Paris", "city": "Paris" },
+      { "id": 2, "name": "London Inn", "city": "London" },
+      { "id": 3, "name": "NY Grand", "city": "New York" }
+    ]
+  }
+  
